@@ -2,8 +2,7 @@ Bootstrap:docker
 From:ubuntu:latest  
 
 %labels
-MAINTAINER Vanessasaur
-SPECIES Dinosaur
+MAINTAINER kb31415926
 
 %environment
 RAWR_BASE=/code
