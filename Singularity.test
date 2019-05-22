@@ -18,9 +18,8 @@ mkdir -p /code
 
     apt-get --assume-yes install sudo
     sudo apt-get update
+    sudo apt-get install mc
 
-#apt-get update
-#apt-get install mc
 echo "mc" >> /code/rawr.sh
 chmod u+x /code/rawr.sh  
 
