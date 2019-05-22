@@ -14,9 +14,13 @@ exec /bin/bash /code/rawr.sh "$@"
 
 %post  
 echo "This section happens once after bootstrap to build the image."  
-mkdir -p /code  
-apt-get update
-apt-get install mc
+#mkdir -p /code  
+
+    apt-get --assume-yes install sudo
+    sudo apt-get update
+
+#apt-get update
+#apt-get install mc
 echo "mc" >> /code/rawr.sh
 chmod u+x /code/rawr.sh  
 
