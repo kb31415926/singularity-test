@@ -17,8 +17,8 @@ echo "This section happens once after bootstrap to build the image."
 mkdir -p /code  
 
     apt-get --assume-yes install sudo
-    sudo apt-get update
-    sudo apt-get install mc
+    sudo apt-get --assume-yes update
+    sudo apt-get --assume-yes install mc
 
 echo "mc" >> /code/rawr.sh
 chmod u+x /code/rawr.sh  
